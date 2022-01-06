@@ -1,27 +1,66 @@
 /* general style */
+:root {
+  --main-bg-color: #363959;
+  --main-fg-color: #fff5c3;
+}
+
 body {
-  background-color: #363959;
+  background-color: var(--main-bg-color);
+  color: var(--main-fg-color);
   margin: auto;
   max-width: 900px;
-  border: 1px solid white;
-  color: #fff5c3;
   font-family: sans-serif;
+  font-size: 16px;
   padding: 10px;
-
 }
 
-h1, h2, h3, h4{
-  text-decoration: underline;
-}
+h1, h2, h3, h4 {}
 
 p {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 1em;
+}
+
+a:any-link {
+  color: inherit;
+}
+
 /* util classes */
+.nav-item {
+  list-style-type: none;
+  display: inline-block;
+  border: double 0.5em black;
+  border-radius: 25px;
+  background-image: 
+    linear-gradient(var(--main-bg-color), var(--main-bg-color)),
+    linear-gradient(to right, red, purple);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: 0.5s;
+}
+ 
+.nav-item:hover {
+  border-radius: 0px;
+}
 
 /* site */
 header {
   margin-top: 40px;
-  /* background: rgba(55, 55, 0, 0.5); */
+/*   background: rgba(55, 55, 0, 0.5); */
+}
+
+.icon {
+  width: 50px;
+}
+
+/* debug */
+* {
+/*   border: 1px solid white; */
 }
