@@ -1,0 +1,27 @@
+/* general style */
+body {
+  background-color: #363959;
+  margin: auto;
+  max-width: 900px;
+  border: 1px solid white;
+  color: #fff5c3;
+  font-family: sans-serif;
+  padding: 10px;
+
+}
+
+h1, h2, h3, h4{
+  text-decoration: underline;
+}
+
+p {
+  text-align: center;
+}
+
+/* util classes */
+
+/* site */
+header {
+  margin-top: 40px;
+  /* background: rgba(55, 55, 0, 0.5); */
+}
