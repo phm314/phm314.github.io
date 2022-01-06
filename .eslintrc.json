@@ -8,5 +8,8 @@
         "ecmaVersion": 13
     },
     "rules": {
-    }
+    },
+    "plugins": [
+        "eslint-plugin-json"
+    ]
 }
